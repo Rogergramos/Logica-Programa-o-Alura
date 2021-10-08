@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<h1>Cálculo de diferença de idades</h1>
+
+<script>
+	var minhaIdade = 32;
+	var idadeIrmao = 38;
+	var anoAtual = 2021;
+
+	var meuAno = anoAtual - minhaIdade;
+	var anoIrmao = anoAtual - idadeIrmao;
+	var calculoIdades = minhaIdade - idadeIrmao;
+
+	function pulaLinha() {
+		// body...
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		// body...
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+
+	mostra("Nossa diferença de idade é " + calculoIdades);
+	mostra("Eu nasci em " + meuAno);
+	mostra("Meu irmão nasceu em " + anoIrmao);
+
+
+</script>

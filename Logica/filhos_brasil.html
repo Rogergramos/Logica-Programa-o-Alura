@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+	
+	var idadeFamilia= 28;
+	var descobrimentoBrasil= 1500;
+	var anoAtual= 2021;
+
+	var idadeBrasil= anoAtual - descobrimentoBrasil;
+	var geracao= idadeBrasil/idadeFamilia;
+
+	function pulaLinha() {
+		// body...
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		// body...
+		document.write(frase);
+		pulaLinha();
+	}
+
+mostra("O Brasil tem " + idadeBrasil+" anos");
+mostra("Já se passaram "+ Math.round(geracao) + " gerações");
+
+
+</script>

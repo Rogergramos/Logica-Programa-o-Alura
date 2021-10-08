@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+
+<h1>Tela de login</h1>
+<hr><br>
+<script type="text/javascript">
+	
+	var loginCadastrado = "alura";
+	var senhaCadastrada = "alura123";
+
+	var tentativas = 3;
+	var valida = false;
+
+while (tentativas>=0 && valida != true){	
+
+	var loginInformado = prompt("Informe seu login");
+	var senhaInformada = prompt("Informe sua senha");
+
+	if (loginCadastrado == loginInformado && 
+		senhaCadastrada == senhaInformada){
+
+		valida = true;
+		alert("Bem-vindo ao Sistema " + loginInformado);
+
+	}else{
+
+		if (tentativas == 0) {
+
+			alert ("Limite de tentativas excedido");
+		}else{
+
+			alert("login invalido. Tente novamente. " + tentativas + " chances.");
+		
+			}
+		}
+
+	tentativas = tentativas-1;
+
+	}
+
+	
+	alert("FIM");
+
+</script>

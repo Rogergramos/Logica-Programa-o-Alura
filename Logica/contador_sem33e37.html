@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<h1>Contador sem 33 e 37</h1>
+<hr><br>
+<script type="text/javascript">
+	
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numero = 30;
+
+	while (numero<=40){
+		
+	if (numero==33 || numero==37) {
+		numero++;
+	} else{
+		mostra(numero);
+		numero++;
+		}
+	}
+	
+	mostra("FIM");
+
+
+</script>
